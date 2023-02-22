@@ -14,6 +14,7 @@
 		F2AF22EC29A68EB90071C80B /* VoiceChangeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF22EB29A68EB90071C80B /* VoiceChangeDemoTests.swift */; };
 		F2AF22F629A68EB90071C80B /* VoiceChangeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF22F529A68EB90071C80B /* VoiceChangeDemoUITests.swift */; };
 		F2AF22F829A68EB90071C80B /* VoiceChangeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF22F729A68EB90071C80B /* VoiceChangeDemoUITestsLaunchTests.swift */; };
+		F2B79C3F29A6932C00941704 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B79C3E29A6932C00941704 /* Voice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F2AF22F129A68EB90071C80B /* VoiceChangeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceChangeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AF22F529A68EB90071C80B /* VoiceChangeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChangeDemoUITests.swift; sourceTree = "<group>"; };
 		F2AF22F729A68EB90071C80B /* VoiceChangeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChangeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2B79C3E29A6932C00941704 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				F2AF22DA29A68EB80071C80B /* VoiceChangeDemoApp.swift */,
 				F2AF22DC29A68EB80071C80B /* ContentView.swift */,
+				F2B79C3E29A6932C00941704 /* Voice.swift */,
 				F2AF22DE29A68EB90071C80B /* Assets.xcassets */,
 				F2AF22E029A68EB90071C80B /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2AF22DD29A68EB80071C80B /* ContentView.swift in Sources */,
+				F2B79C3F29A6932C00941704 /* Voice.swift in Sources */,
 				F2AF22DB29A68EB80071C80B /* VoiceChangeDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
