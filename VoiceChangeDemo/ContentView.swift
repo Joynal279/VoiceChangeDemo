@@ -11,32 +11,31 @@ import AVFoundation
 struct ContentView: View {
     
     let speaker = AVSpeechSynthesizer()
-    let dialogue = AVSpeechUtterance(string: "Hello I am clearly a man")
     
     var body: some View {
         VStack {
             Text("Male Voice")
                 .onTapGesture {
-                    speakText(personName: Voice.Daniel)
+                    speakText(text: "ami tomake valobashi. tumi ki amake valobasho na?", personName: Voice.Daniel)
                 }
             Spacer()
                 .frame(height: 20)
             Text("Female Voice")
                 .onTapGesture {
-                    speakText(personName: Voice.Karen)
+                    speakText(text: "ami tomake valobashi. tumi ki amake valobasho na?", personName: Voice.Karen)
                 }
         }
         .padding()
     }
     
-    func speakText(personName: Voice) {
+    func speakText(text: String, personName: Voice) {
+        let dialogue = AVSpeechUtterance(string: text)
         dialogue.rate = AVSpeechUtteranceDefaultSpeechRate
         dialogue.voice = AVSpeechSynthesisVoice(language: personName.person)
-        
-//        dialogue.rate = 0.4
-//        dialogue.pitchMultiplier = 0.5
-//        dialogue.preUtteranceDelay = 0
-//        dialogue.volume = 1
+        //        dialogue.rate = 0.4
+        //        dialogue.pitchMultiplier = 0.5
+        //        dialogue.preUtteranceDelay = 0
+        //        dialogue.volume = 1
         print(AVSpeechSynthesisVoice.speechVoices())
         
         guard speaker.isSpeaking else {
